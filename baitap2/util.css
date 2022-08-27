@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ml-10{
+    margin-left: 10px;
+}
+
+nav{
+    padding: 20px 0;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+}

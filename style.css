@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.slider-wrapper{
+    width: 60%;
+    margin: 40px auto; 
+    /* trên dưới 40px */
+    position: relative;
+}
+
+.slider-wrapper .slider-image:first-child{
+    display: block;
+}
+
+.slider-wrapper .slider-image{
+    display: none;
+}
+
+.slider-wrapper .slider-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-wrapper .slider-button.previous{
+    left: -50px;
+}
+
+.slider-wrapper .slider-button.next{
+    right: -50px;
+}

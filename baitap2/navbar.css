@@ -1,0 +1,52 @@
+.navbar-mobile{
+    display: none;
+}
+
+.icons{
+    display: none;
+}
+
+
+@media screen and (max-width: 776px) {
+    .icons{
+        display: block;
+    }
+
+    .navbar-mobile{
+        margin-top: 19px;
+        display: block;
+        position: absolute;
+        text-align: right;
+        width: 0;
+        height: calc(100vh - 19px);
+        right: 0;
+        overflow: hidden;
+        transition: 1.5s;
+    }
+
+    .navbar-mobile.active{
+        width: 80%;
+    }
+
+    .nav-mobile-list .nav-mobile-item{
+        /* margin-bottom: 30px; */
+        padding-bottom: 30px;
+    }
+
+    a{
+        font-size: 30px;
+        font-weight: 300;
+        margin-right: 20px;
+        white-space: nowrap;
+        /* chữ dài có khoảng cách khi transition đỡ giật lag */
+    }
+
+    .close{
+        display: none;
+    }
+
+    .nav-list{
+        display: none;
+    }
+}
+
